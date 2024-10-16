@@ -31,7 +31,7 @@
 
 ## 加密
 請輸入要搜尋的 Query，
-例如 **ID = 1** 、 **Name = John AND ID = 3** ．．．；
+例如 「**ID = 1**」 、 「**Name = John AND ID = 3**」 等等；
 並留意每個符號中間都需有一個空格分開；
 完成加密後會產生 required.zip 檔案。 
 
