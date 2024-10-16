@@ -41,6 +41,8 @@
 * `Name = John AND ID = 3`
 
 * `Name != Alice OR ID <= 5`
+
+
 並留意每個符號中間都需有一個空格分開；
 完成加密後會產生 required.zip 檔案。 
 
