@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FHE Local Operations</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>同態加密搜尋</h1>
+
+    <div>
+        Security Level: 
+        <select id="securityLevel">
+            <option value="0">TOY</option>
+            <option value="1">128-bit</option>
+            <!-- Add other security levels as needed -->
+        </select>
+    </div>
+    
+    <div>
+        <button id="generateKeysButton">產生金鑰</button>
+    </div>
+    
+    <div>
+        Query: <input type="text" id="query">
+    </div>
+    
+    
+    <div>
+        <button id="encryptAndPrepareButton">加密</button>
+    </div>
+
+    <div>
+        請輸入密碼進行解密，再輸入新的密碼重新加密金鑰:
+    </div>
+    
+    <div>
+        
+        <button id="DecryptButton">解密</button>
+    </div>
+
+    <div>
+        <h3>搜尋結果:</h3>
+        <p id="status"></p>
+        <pre id="decryptedResult"></pre>
+    </div>
+    
+    <div id="status"></div>
+
+    <script>
+        console.log('Inline script executed');
+        document.getElementById('status').textContent = 'Page loaded';
+    </script>
+
+    <script src="local.js"></script>
+</body>
+</html>
