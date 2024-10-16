@@ -4,10 +4,13 @@
 使用者端可以供使用者產生金鑰、加密與解密；
 而搜尋的功能則由伺服器端執行。
 
+*FHE_client* 為使用者端所需要的程式碼；
+*FHE_server* 則是伺服器端所需。
+
 # 安裝
 
-首先使用者與伺服器都需要安裝 OpenFHE，
-並且在各自的 **build** 資料夾下安裝 Node.js 與所需的 modules。
+首先使用者與伺服器都需要安裝 *OpenFHE*，
+並且在各自的 *build* 資料夾下安裝 *Node.js* 與所需的 modules。
 並且執行 make 編譯程式。
 
 # 啟動服務 
@@ -15,14 +18,14 @@
 ## 使用者端
 使用者需要開啟中端機， 切換至路徑 FHE_client/build/ 下，執行指令
 
-  npm start 
+`  npm start`
 
 以啟動 Electron 視窗，在視窗中會有各個功能的按鈕，請依序執行。
 
 ## 伺服器端
 切換至路徑 FHE_server/build/ 下，執行指令
 
-  node server.js
+`  node server.js`
 
 # 執行
 
@@ -32,7 +35,12 @@
 
 ## 加密
 請輸入要搜尋的 Query，
-例如 「**ID = 1**」 、 「**Name = John AND ID = 3**」 等等；
+例如：
+* `ID = 1`
+
+* `Name = John AND ID = 3`
+
+* `Name != Alice OR ID <= 5`
 並留意每個符號中間都需有一個空格分開；
 完成加密後會產生 required.zip 檔案。 
 
